@@ -1,5 +1,5 @@
 
- figure {
+ .figure {
     padding: 0;
     margin: 0;
     background-color: #FF7F50
@@ -12,7 +12,7 @@
 }
 
 
-  body-color{
+  .body-color{
     background-color: black
   font-family: Tahoma, Arial, Verdana;
   font-size:14px;
