@@ -2,7 +2,7 @@
  .figure {
     padding: 0;
     margin: 0;
-    background-color: #FF7F50
+  
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +13,6 @@
 
 
   .body-color{
-    background-color: black
-  font-family: Tahoma, Arial, Verdana;
+    background-color: pink
   font-size:14px;
 }
