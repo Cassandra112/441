@@ -1,4 +1,5 @@
- .body {
+
+ figure {
     padding: 0;
     margin: 0;
     background-color: #FF7F50
@@ -8,4 +9,11 @@
     background-position: center;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
+}
+
+
+  body-color{
+    background-color: black
+  font-family: Tahoma, Arial, Verdana;
+  font-size:14px;
 }
