@@ -2,13 +2,14 @@
  .figure {
     padding: 0;
     margin: 0;
-    color: pink
+    background-color: pink
 }
 
 
   .body-color{
     color: pink
   font-size:14px;
+  background-color: inherit;
 }
 
 font {
