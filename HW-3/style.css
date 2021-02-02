@@ -11,5 +11,5 @@
   }
 
   .bottom {
-    position: absolute;
+    position: inherit;
   }
