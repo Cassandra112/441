@@ -23,11 +23,11 @@ function storyFunction(choice) {
         document.getElementById("choice2").innerHTML = "RiteAid";
     } else if (choice == 2 && answer2 == "RiteAid") {
         document.getElementById("story").innerHTML = "Taylor finds accessories that match. She is ready for the gala.";
-        document.getElementById("choice1").innerHTML = "Watch from afar"; //**UPDATE CLOSING SECTION HERE
-        document.getElementById("choice2").innerHTML = "Get in closer";
+        document.getElementById("choice1").innerHTML = "She gets ready"; //**UPDATE CLOSING SECTION HERE
+        document.getElementById("choice2").innerHTML = "Stays home and watches Netflix";
     }
 
 }
 
 
-//layout date credit to: Michael Cassens / instructor
+//layout credit to: Michael Cassens / instructor

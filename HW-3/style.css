@@ -1,6 +1,7 @@
   body  {
-      font: Times;
-      font-color: white;
+      font: Garamond;
+      font-style: italic;
+      font-color: black;
       background-color: honeydew;
       text-align: center;
 
@@ -9,3 +10,16 @@
   .taylor {
     position: absolute;
   }
+
+  .guards {
+  position: fixed;
+  bottom: 0;
+  width: 300px;
+  border: 30px solid #pink;
+}
+.dress {
+position: relative;
+bottom: 0;
+width: 300px;
+opacity: 10%
+}
