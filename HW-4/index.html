@@ -6,84 +6,43 @@
     <meta name="description"content="Adventure Story">
     <meta name="author" content="Cassandra Soto">
 
+
     <link rel="stylesheet" type="text/css" href= "./style.css">
     <title>Week 3 Homework</title>
-    
+    <script src="script.js"> </script>
+  </head>
 
+    <div class id="main-container">
+    <h1>TAYLOR'S SHOPPING ADVENTURE</h1>
+    <br></br>
+  </div>
 
-<html>
-    <style>
-        body{
-            background-color: bisque;
-        }
-    </style>
-    <script>
-        function getChoice1()
-        {
-            var myChoice = document.getElementById("choice").value;
-            var myQuestion = document.getElementById("question");
-            if(myChoice === "Green")
-            {
-                document.getElementById("choice").style.display="none";
-                document.getElementById("btnSubmit").style.display="none";
-
-                document.getElementById("choice2").style.display="block";
-                document.getElementById("btnSubmit2").style.display="block";
-
-
-                myQuestion.innerHTML = "Oh you chose green. What is your favorite food?";
-            }
-            else if(myChoice === "Blue")
-            {
-                myQuestion.innerHTML = "You chose blue.  What is your favorite movie?";
-
-            }
-            else
-            {
-                myQuestion.innerHTML = "Invalid answer";
-            }
-
-        }
-        function getChoice2()
-        {
-            var food = document.getElementById("choice2").value;
-            var myQuestion = document.getElementById("question");
-            if(food === "tacos")
-            {
-                document.getElementById("mainImage").src = "taco.jpg"
-                myQuestion.innerHTML = "I love tacos on Tuesdays!";
-            }
-            else if(food === "nachos")
-            {
-                myQuestion.innerHTML = "I love nachos, but nachos do not love me.";
-            }
-        }
-    </script>
-
+    <!--body of webpage-->
     <body>
 
-        <h1>Into the void</h1>
-        <br>
-        <img src="tree.jpeg" id="mainImage">
-    <div id="question">
-    <br>
-        It was a dark and lonely time in Bob's life. He was wandering aimlessly and wondering where to go.
-        <br>
-        He came upon a tree and it asked him what his favorite color was.
-        <br>
-        He had only two choices.  It was Green or Blue.
-    </div>
+    <span id="story">
+      Taylor is planning to go to a gala. She needs to find the right dress, shoes, and accessories.
+      Will you help Taylor get ready for the gala? </span>
 
-        <br>
-        <input type="text" size="30" id="choice" value="Please enter Green or Blue">
-        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+      <div class id="taylor">
+      <img src="Taylor.jpeg" height="219" width="295">
+      <br></br>
 
-        <input type="text" size="30" id="choice2" value="Enter favorite food (tacos or nachos)." style="display:none">
-        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+      </div>
 
-        <input type="text" size="30" id="choice3" value="Enter favorite movie."  style="display:none">
-        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+
+    <button id="choice1" onclick="storyFunction(1);">Yes</button>&nbsp;
+    <button id="choice2" onclick="storyFunction(2);">No</button>
+    <br></br>
+
+
+
 
     </body>
+    <br></br><div class id="dress">
+    <img src="dress.jpeg" height="900" width="1495">
+    </div>
+    <img src="guards.jpeg" height="100" width="1495">
 
-</html>
+    </html>

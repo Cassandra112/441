@@ -21,18 +21,22 @@ function storyFunction(choice) {
         document.getElementById("story").innerHTML = "Taylor finds a glittery dress. Yet, she still needs to find her accessories. Should she go to the local boutique or RiteAid";
         document.getElementById("choice1").innerHTML = "Local boutique"; //update local boutique
         document.getElementById("choice2").innerHTML = "RiteAid";
+      } else if (choice == 2 && answer2 == "Local boutique") {
+          document.getElementById("story").innerHTML = "Taylor finds accessories that match. She is ready for the gala.";
+          document.getElementById("choice1").innerHTML = "She gets ready"; //**UPDATE CLOSING SECTION HERE
+          document.getElementById("choice2").innerHTML = "Stays home and watches Netflix";
     } else if (choice == 2 && answer2 == "RiteAid") {
         document.getElementById("story").innerHTML = "Taylor finds accessories that match. She is ready for the gala.";
         document.getElementById("choice1").innerHTML = "She gets ready"; //**UPDATE CLOSING SECTION HERE
         document.getElementById("choice2").innerHTML = "Stays home and watches Netflix";
       } else if (choice == 1 && answer1 == "She gets ready") {
-        document.getElementById("story").innerHTML = "Taylor gets ready for the gala";
+        document.getElementById("story").innerHTML = "What's Next";
         document.getElementById("choice1").innerHTML = "Start Over"; //**UPDATE CLOSING SECTION HERE
         document.getElementById("choice2").innerHTML = "Start Over";
       } else if (choice == 2 && answer2 == "Stays home and watches Netflix") {
-        document.getElementById("story").innerHTML = "Taylor finds accessories that match. She is ready for the gala.";
-        document.getElementById("choice1").innerHTML = "She gets ready"; //**UPDATE CLOSING SECTION HERE
-        document.getElementById("choice2").innerHTML = "Stays home and watches Netflix";
+        document.getElementById("story").innerHTML = "What's Next";
+        document.getElementById("choice1").innerHTML = "Start Over"; //**UPDATE CLOSING SECTION HERE
+        document.getElementById("choice2").innerHTML = "Start Over";
     }
 
 }
