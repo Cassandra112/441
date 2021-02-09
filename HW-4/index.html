@@ -1,5 +1,5 @@
 <html>
-
+<link rel="stylesheet" type="text/css" href= "./style.css">
     <script>
         function getChoice1()
         {
@@ -25,7 +25,7 @@
               document.getElementById("btnSubmit2").style.display="block";
 
 
-
+              document.getElementById("mainImage").src = "heels.jpg"
               myQuestion.innerHTML = "Target is a great choice! Taylor finds one pair of golden slippers here that fit. She needs to buy her dress next, should she go to Nordstrom or Walmart";
             }
             else
@@ -58,19 +58,15 @@
         }
         function getChoice3()
         {
-            var accesories = document.getElementById("choice3").value;
+            var myChoice = document.getElementById("choice3").value;
             var myQuestion = document.getElementById("question");
-            if(accessories === "boutique")
+            if(myChoice === "Boutique")
             {
-              document.getElementById("choice3").style.display="none";
-              document.getElementById("btnSubmit").style.display="none";
 
-              document.getElementById("choice4").style.display="block";
-              document.getElementById("btnSubmit4").style.display="block";
 
                 myQuestion.innerHTML = "A local boutique will do the job! She is almost ready for the gala. Taylor needs perfume, should she go to Perfume Factory or Neiman Marcus?";
             }
-            else if(accessories === "Thrifty")
+            else if(myChoice === "RiteAid")
             {
 
 
@@ -145,9 +141,9 @@
         <button id="btnSubmit" onclick="getChoice1();">Press here to move forward</button>
 
         <input type="text" size="50" id="choice2" value="Type Nordstrom or Walmart" style="display:none">
-        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Press here to move forward</button>
+        <button id="btnSubmit2" onclick="getChoice2();" style="display:none">Press here to move forward</button>
 
-        <input type="text" size="50" id="choice3" value="Type Local boutique or Rite Aid"  style="display:none">
+        <input type="text" size="50" id="choice3" value="Type boutique or RiteAid" style="display:none">
         <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Press here to move forward</button>
 
         <input type="text" size="50" id="choice4" value="Type Neiman Marcus or perfume factory"  style="display:none">
