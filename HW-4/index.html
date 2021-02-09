@@ -1,106 +1,142 @@
-<!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport"content="width=device-width,initial-scale=1.0">
-    <meta name="description"content="Adventure Story">
-    <meta name="author" content="Cassandra Soto">
+<html>
+
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "Macys")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+
+                document.getElementById("choice2").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block";
 
 
-    <link rel="stylesheet" type="text/css" href= "./style.css">
-    <title>Week 3 Homework</title>
-    <script src="script.js"> </script>
-  </head>
+                myQuestion.innerHTML = "Macys is perfect! Taylor finds the perfect shoes, yet she still needs her dress. Should she go to Nordstrom or Walmart?";
+            }
+            else if(myChoice === "Target")
+            {
+                myQuestion.innerHTML = "Target is a great choice! Taylor finds one pair of golden slippers here that fit. She needs to buy her dress next, should she go to Nordstrom or Walmart";
 
-    <div class id="main-container">
-    <h1>TAYLOR'S SHOPPING ADVENTURE</h1>
-    <br></br>
-  </div>
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
 
-    <!--body of webpage-->
+        }
+        function getChoice2()
+        {
+            var theDress = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(theDress === "Nordstrom")
+            {
+                document.getElementById("mainImage").src = "dress.jpeg"
+                myQuestion.innerHTML = "Taylor finds a cheap sequence dress, yet she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
+            }
+            else if(theDress === "Walmart")
+            {
+                myQuestion.innerHTML = "Taylor finds a glittery dress. Yet, she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+        }
+        function getChoice3()
+        {
+            var accesories = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(accessories === "local boutique")
+            {
+
+                document.getElementById("mainImage").src = "dress.jpeg"
+                myQuestion.innerHTML = "A local boutique will do the job! She is almost ready for the gala.Taylor needs perfume, should she go to perfume factory or Neiman marcus?";
+            }
+            else if(accessories === "RiteAid")
+            {
+                myQuestion.innerHTML = "RiteAid is a poor choice, but it will do! Taylor needs perfume, should she go to Perfume Factory or Neiman Marcus?";
+
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+
+        }
+        function getChoice4()
+        {
+            var perfume = document.getElementById("choice4").value;
+            var myQuestion = document.getElementById("question");
+            if(perfume === "Perfume Factory")
+            {
+
+                document.getElementById("mainImage").src = "dress.jpeg"
+                myQuestion.innerHTML = "Taylor is almost READY! She needs a plus one. Should she ask her best friend, or ask her crush to go with her ";
+            }
+            else if(perfume === "Neiman Marcus")
+            {
+                myQuestion.innerHTML = "Neiman Marcus sold her the BEST perfume ever! Now Taylor needs a date! Should she ask her crush to go with her or her best friend?";
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+            function getChoice5()
+            {
+                var date = document.getElementById("choice5").value;
+                var myQuestion = document.getElementById("question");
+                if(date === "best friend")
+                {
+
+                    document.getElementById("mainImage").src = "dress.jpeg"
+                    myQuestion.innerHTML = "Taylor is READY! Click here to start over!";
+                }
+                else if(date === "crush")
+                {
+                    myQuestion.innerHTML = "Taylor is READY! Click here to start over!";
+                }
+                else
+                {
+                    myQuestion.innerHTML = "Invalid answer";
+                }
+                
+  </script>
+
     <body>
 
-    <span id="story">
-      Taylor is planning to go to a gala. She needs to find the right dress, shoes, and accessories.
-      Will you help Taylor get ready for the gala? </span>
+        <h1>TAYLOR'S SHOPPING ADVENTURE</h1>
+        <br>
 
-      <div class id="taylor">
-      <img src="Taylor.jpeg" height="219" width="295">
-      <br></br>
+    <div id="question">
+    <br>
+        Taylor is planning to go to a gala. She needs to find the right dress, shoes, and accessories.
+        Assist Taylor with which shops and stores to shop at.
+        <br>
+        Taylor is at a fork in the road. She needs to decide where to buy her shoes. Should she go to Macy's or Target?
 
-      </div>
-      <script>
-      function storyFunction(choice) {
-          var answer1 = document.getElementById("choice1").innerHTML;
-          var answer2 = document.getElementById("choice2").innerHTML;
-          if (choice == 1 && answer1 == "Yes") {
-              document.getElementById("story").innerHTML = "Taylor is at a fork in the road. She needs to decide where to buy her shoes. Should she go to Macy's or Target?";
-              document.getElementById("choice1").innerHTML = "Macy's";
-              document.getElementById("choice2").innerHTML = "Target";
-          } else if (choice == 2 && answer2 == "Target") {
-              document.getElementById("story").innerHTML = "Taylor finds one pair of golden slippers here that fit. She needs to buy her dress next, should she go to Nordstrom’s or Walmart";
-              document.getElementById("choice1").innerHTML = "Nordstrom";
-              document.getElementById("choice2").innerHTML = "Walmart";
-          } else if (choice == 1 && answer1 == "Macy's") {
-              document.getElementById("story").innerHTML = "Taylor finds the perfect shoes, yet she still needs her dress. Should she go to Nordstrom’s or Walmart";
-              document.getElementById("choice1").innerHTML = "Nordstrom";
-              document.getElementById("choice2").innerHTML = "Walmart";
-          } else if (choice == 2 && answer2 == "Walmart") {
-              document.getElementById("story").innerHTML = "Taylor finds a cheap sequence dress, yet she still needs to find her accessories. Should she go to the local boutique or RiteAid";
-              document.getElementById("choice1").innerHTML = "Local boutique";
-              document.getElementById("choice2").innerHTML = "RiteAid";
-          } else if (choice == 1 && answer1 == "Nordstrom") {
-              document.getElementById("story").innerHTML = "Taylor finds a glittery dress. Yet, she still needs to find her accessories. Should she go to the local boutique or RiteAid";
-              document.getElementById("choice1").innerHTML = "Local boutique"; //update local boutique
-              document.getElementById("choice2").innerHTML = "RiteAid";
-            } else if (choice == 2 && answer2 == "Local boutique") {
-                document.getElementById("story").innerHTML = "Taylor finds accessories that match. She is ready for the gala.";
-                document.getElementById("choice1").innerHTML = "She gets ready"; //**UPDATE CLOSING SECTION HERE
-                document.getElementById("choice2").innerHTML = "Stays home and watches Netflix";
-          } else if (choice == 2 && answer2 == "RiteAid") {
-              document.getElementById("story").innerHTML = "Taylor finds accessories that match. She is ready for the gala.";
-              document.getElementById("choice1").innerHTML = "She gets ready"; //**UPDATE CLOSING SECTION HERE
-              document.getElementById("choice2").innerHTML = "Stays home and watches Netflix";
-            } else if (choice == 1 && answer1 == "She gets ready") {
-              document.getElementById("story").innerHTML = "What's Next";
-              document.getElementById("choice1").innerHTML = "Start Over"; //**UPDATE CLOSING SECTION HERE
-              document.getElementById("choice2").innerHTML = "Start Over";
-            } else if (choice == 2 && answer2 == "Stays home and watches Netflix") {
-              document.getElementById("story").innerHTML = "What's Next";
-              document.getElementById("choice1").innerHTML = "Start Over"; //**UPDATE CLOSING SECTION HERE
-              document.getElementById("choice2").innerHTML = "Start Over";
-          }
+    </div>
 
-      }
+        <br>
+        <input type="text" size="50" id="choice" value="Type Macy's or Target here">
+         <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
 
+        <input type="text" size="50" id="choice2" value="Type Nordstrom or Walmart" style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Press here to move forward</button>
 
-      //layout credit to: Michael Cassens / instructor
-</script>
+        <input type="text" size="50" id="choice3" value="Type Local boutique or Rite Aid"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Press here to move forward</button>
 
+        <input type="text" size="50" id="choice4" value="Type Neiman Marcus or perfume factory"  style="display:none">
+        <button id="btnSubmit4" onclick="getChoice4();" style="display:none">Press here to move forward</button>
 
-
-    <button id="choice1" onclick="storyFunction(1);">Yes</button>&nbsp;
-    <button id="choice2" onclick="storyFunction(2);">No</button>
-    <br></br>
-    -------------
-
-
-        <input type="text" size="30" id="choice" value="Please enter Green or Blue">
-        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
-
-        <input type="text" size="30" id="choice2" value="Enter favorite food (tacos or nachos)." style="display:none">
-        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
-
-        <input type="text" size="30" id="choice3" value="Enter favorite movie."  style="display:none">
-        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
-
+        <input type="text" size="50" id="choice5" value="Start Over"  style="display:none">
+        <button id="btnSubmit5" onclick="getChoice5();" style="display:none">Press here to move forward</button>
 
 
 
     </body>
-    <br></br><div class id="dress">
-    <img src="dress.jpeg" height="900" width="1495">
-    </div>
-    <img src="guards.jpeg" height="100" width="1495">
 
-    </html>
+</html>

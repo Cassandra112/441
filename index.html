@@ -1,40 +1,141 @@
-<!DOCTYPE html>
+<html>
 
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="Cassandra's 441 Homework Site" content="Live Site for MART441">
-    <meta name="Cassandra" content="Your Name">
-    <meta name="keywords" content="Some, keywords, here...">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cassandra's 441 Homework Site </title>
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "Macys")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+
+                document.getElementById("choice2").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block";
 
 
-  <div id="figure" class"body-color">
+                myQuestion.innerHTML = "Macys is perfect! Taylor finds the perfect shoes, yet she still needs her dress. Should she go to Nordstrom or Walmart?";
+            }
+            else if(myChoice === "Target")
+            {
+                myQuestion.innerHTML = "Target is a great choice! Taylor finds one pair of golden slippers here that fit. She needs to buy her dress next, should she go to Nordstrom or Walmart";
 
-        <h1>Cassandra's 441 Homework Site</h1>
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
 
-    <br>
-        <p>This is the main homepage for Cassandra Soto's  homework for MART441 / Web Technology course.
-        At this site all live examples of homework will be found here for the Spring '21 semester.</p>
-    </br>
+        }
+        function getChoice2()
+        {
+            var theDress = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(theDress === "Nordstrom")
+            {
+                document.getElementById("mainImage").src = "dress.jpeg"
+                myQuestion.innerHTML = "Taylor finds a cheap sequence dress, yet she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
+            }
+            else if(theDress === "Walmart")
+            {
+                myQuestion.innerHTML = "Taylor finds a glittery dress. Yet, she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+        }
+        function getChoice3()
+        {
+            var accesories = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(accessories === "local boutique")
+            {
 
-  </div>
-    <p>I am a student at the University of Montana. Presently, I work in printing and produce various types
-      of material that is used for marketing and education. I am familiar with designing various types of
-      signage, collages, photo enhancements, and more. Additionally, I have worked in sound design and
-      creating short videos within the Adobe Suite. Upon graduating, I plan on utilizing my skill set in
-      the field that I work in and in any future fields I will work in.</p>
+                document.getElementById("mainImage").src = "dress.jpeg"
+                myQuestion.innerHTML = "A local boutique will do the job! She is almost ready for the gala.Taylor needs perfume, should she go to perfume factory or Neiman marcus?";
+            }
+            else if(accessories === "RiteAid")
+            {
+                myQuestion.innerHTML = "RiteAid is a poor choice, but it will do! Taylor needs perfume, should she go to Perfume Factory or Neiman Marcus?";
 
-      <p>I believe that the work that I create has classic elements to it. I would describe classic as reflecting
-        strong and sharp colors, serif type fonts, and images and videos that are crisp and clean. I believe that
-        these elements that I incorporate to my work can be seen as unique and can capture audiences who value
-        and appreciate this feel and look.</p>
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+
+        }
+        function getChoice4()
+        {
+            var perfume = document.getElementById("choice4").value;
+            var myQuestion = document.getElementById("question");
+            if(perfume === "Perfume Factory")
+            {
+
+                document.getElementById("mainImage").src = "dress.jpeg"
+                myQuestion.innerHTML = "Taylor is almost READY! She needs a plus one. Should she ask her best friend, or ask her crush to go with her ";
+            }
+            else if(perfume === "Neiman Marcus")
+            {
+                myQuestion.innerHTML = "Neiman Marcus sold her the BEST perfume ever! Now Taylor needs a date! Should she ask her crush to go with her or her best friend?";
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+            function getChoice5()
+            {
+                var date = document.getElementById("choice5").value;
+                var myQuestion = document.getElementById("question");
+                if(date === "best friend")
+                {
+
+                    document.getElementById("mainImage").src = "dress.jpeg"
+                    myQuestion.innerHTML = "Taylor is READY! Click here to start over!";
+                }
+                else if(date === "crush")
+                {
+                    myQuestion.innerHTML = "Taylor is READY! Click here to start over!";
+                }
+                else
+                {
+                    myQuestion.innerHTML = "Invalid answer";
+                }
+
+                </script>
+
+
+
+    <body>
+
+        <h1>TAYLOR'S SHOPPING ADVENTURE</h1>
         <br>
-        <p>Finally, I hope that while working within this course it will enhance my skills at a greater and stronger level.</p>
-      </br>
 
-        <img src= "./images/casey.jpeg" alt="Who am I" width="700" height="400" /></img>
+    <div id="question">
+    <br>
+        Taylor is planning to go to a gala. She needs to find the right dress, shoes, and accessories.
+        Assist Taylor with which shops and stores to shop at.
+        <br>
+        Taylor is at a fork in the road. She needs to decide where to buy her shoes. Should she go to Macys or Target?
+    </div>
 
-      </head>
+        <br>
+        <input type="text" size="50" id="choice" value="Type Macy's or Target here">
+         <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+        <input type="text" size="50" id="choice2" value="Type Nordstrom or Walmart" style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Press here to move forward</button>
+
+        <input type="text" size="50" id="choice3" value="Type Local boutique or Rite Aid"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Press here to move forward</button>
+
+        <input type="text" size="50" id="choice4" value="Type Neiman Marcus or perfume factory"  style="display:none">
+        <button id="btnSubmit4" onclick="getChoice4();" style="display:none">Press here to move forward</button>
+
+        <input type="text" size="50" id="choice5" value="Start Over"  style="display:none">
+        <button id="btnSubmit5" onclick="getChoice5();" style="display:none">Press here to move forward</button>
+
+    </body>
+
 </html>
