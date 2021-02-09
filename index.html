@@ -99,30 +99,31 @@
                     myQuestion.innerHTML = "Taylor is READY! Click here to start over!";
                 }
                 else
-                {
+
                     myQuestion.innerHTML = "Invalid answer";
                 }
+              }
 
       </script>
 
-
-
     <body>
 
-        <h1>TAYLOR'S SHOPPING ADVENTURE</h1>
+        <h1>Taylors Shopping Adventure</h1>
         <br>
 
     <div id="question">
+
     <br>
         Taylor is planning to go to a gala. She needs to find the right dress, shoes, and accessories.
         Assist Taylor with which shops and stores to shop at.
         <br>
-        Taylor is at a fork in the road. She needs to decide where to buy her shoes. Should she go to Macys or Target?
+        Taylor is at a fork in the road. She needs to decide where to buy her shoes. Should she go to Macy's or Target?
+
     </div>
 
         <br>
         <input type="text" size="50" id="choice" value="Type Macy's or Target here">
-         <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+        <button id="btnSubmit" onclick="getChoice1();">Press here to move forward</button>
 
         <input type="text" size="50" id="choice2" value="Type Nordstrom or Walmart" style="display:none">
         <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Press here to move forward</button>
@@ -136,6 +137,6 @@
         <input type="text" size="50" id="choice5" value="Start Over"  style="display:none">
         <button id="btnSubmit5" onclick="getChoice5();" style="display:none">Press here to move forward</button>
 
-    </body>
+  </body>
 
 </html>
