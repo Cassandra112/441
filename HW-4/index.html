@@ -1,5 +1,6 @@
 <html>
 <link rel="stylesheet" type="text/css" href= "./style.css">
+
     <script>
         function getChoice1()
         {
@@ -25,7 +26,7 @@
               document.getElementById("btnSubmit2").style.display="block";
 
 
-              document.getElementById("mainImage").src = "heels.jpg"
+
               myQuestion.innerHTML = "Target is a great choice! Taylor finds one pair of golden slippers here that fit. She needs to buy her dress next, should she go to Nordstrom or Walmart";
             }
             else
@@ -41,36 +42,31 @@
             if(dress === "Walmart")
             {
 
-
-                myQuestion.innerHTML = "Walmart is fantastic!Taylor finds a cheap sequence dress, yet she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
+                document.getElementById("mainImage").src = "heels0.jpeg"
+                myQuestion.innerHTML = "Walmart is fantastic! Taylor finds a cheap sequence dress, yet she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
             }
             else if(dress === "Nordstrom")
             {
-
-
                 myQuestion.innerHTML = "Nordstrom works! Taylor finds a glittery dress. Yet, she still needs to find her accessories. Should she go to the local boutique or Riteaid?";
             }
             else
             {
                 myQuestion.innerHTML = "Invalid answer";
             }
-
         }
         function getChoice3()
+
         {
-            var myChoice = document.getElementById("choice3").value;
+            var accessories = document.getElementById("choice3").value;
             var myQuestion = document.getElementById("question");
-            if(myChoice === "Boutique")
+            if(accessories === "boutique")
             {
-
-
+                document.getElementById("mainImage").src = "dress.jpg"
                 myQuestion.innerHTML = "A local boutique will do the job! She is almost ready for the gala. Taylor needs perfume, should she go to Perfume Factory or Neiman Marcus?";
             }
-            else if(myChoice === "RiteAid")
+            else if(accessories === "RiteAid")
             {
-
-
-                myQuestion.innerHTML = "RiteAid is a poor choice, but it will do! Taylor needs perfume, should she go to Perfume Factory or Neiman Marcus?";
+                myQuestion.innerHTML = "RiteAid is a poor choice, but it will do! Taylor needs perfume, should she go to Perfume Factory or Neiman Marcus?"
             }
             else
             {
@@ -92,7 +88,6 @@
               document.getElementById("btnSubmit5").style.display="block";
 
                 myQuestion.innerHTML = "Neiman Marcus sold her the BEST perfume ever! Now Taylor needs a date! Should she ask her crush to go with her or her best friend?";
-
             }
             else
             {
@@ -125,16 +120,24 @@
     <body>
 
         <h1>Taylors Shopping Adventure</h1>
-        <br>
 
-    <div id="question">
+        <div class id="mainImage">
+        <img src="Taylor.jpeg" height="219" width="295">
+        <br></br>
+        </div>
 
-    <br>
-        Taylor is planning to go to a gala. She needs to find the right dress, shoes, and accessories.
-        Assist Taylor with which shops and stores to shop at.
+        <p id="p2">Taylor's dream has finally come TRUE, she's finally going to a Gala!</p>
+
+        <script>
+        document.getElementById("p2").style.color = "pink";
+        </script>
+
         <br>
-        Taylor is at a fork in the road. She needs to decide where to buy her shoes. Should she go to Macy's or Target?
-      </div>
+          <div id="question">
+          Help Taylor plan to find the right dress, shoes, accessories, and more.
+          First, help Taylor get ready by choosing which store to buy her dress from. Should she go to Macy's
+          or Target?
+        </div>
 
         <br>
         <input type="text" size="50" id="choice" value="Type Macy's or Target here">
@@ -149,8 +152,44 @@
         <input type="text" size="50" id="choice4" value="Type Neiman Marcus or perfume factory"  style="display:none">
         <button id="btnSubmit4" onclick="getChoice4();" style="display:none">Press here to move forward</button>
 
-        <input type="text" size="50" id="choice5" value="Start Over"  style="display:none">
+        <input type="text" size="50" id="choice5" value="Start Over" style="display:none">
         <button id="btnSubmit5" onclick="getChoice5();" style="display:none">Press here to move forward</button>
+        <br>
+        <br>
+        <img src="heels.jpeg" height="219" width="295"><img src="dress.jpeg" height="219" width="295"><img src="perfume.jpeg" height="219" width="295">
+
+        <br>
+        <br>
+        <br>
+
+  <html>
+    <body>
+        <label id="lblName">Did Taylor get all the things she needs for the Gala?</label><br>
+        <input id="txtName" size="10" type="text"><br>
+        <button id="btnSubmit" onclick="getName('She is ready for the Gala');">Type "Yes" or "Maybe"</button><br>
+
+         <script>
+            function getName(greeting)
+            {
+                var currentName = document.getElementById("txtName").value;
+                document.getElementById("lblName").innerHTML = currentName + ", " + greeting;
+            }
+            </script>
+
+          <br>
+            <h4>Click on the below buttons to see how Taylor looks before and after!<h4>
+
+            <button onclick="document.getElementById('myImage').src='before2.jpeg'">Before</button>
+
+            <img id="myImage" src="pic_bulboff.gif" style="width:300px">
+
+            <button onclick="document.getElementById('myImage').src='after.jpeg'">After</button>
+
+            </script>
+
+    </body>
+</html>
+
 
   </body>
 
