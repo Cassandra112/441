@@ -29,16 +29,17 @@
         }
         function getChoice2()
         {
-            var theDress = document.getElementById("choice2").value;
+            var myChoice = document.getElementById("choice2").value;
             var myQuestion = document.getElementById("question");
-            if(theDress === "Nordstrom")
+            if(myChoice === "Nordstrom")
             {
                 document.getElementById("mainImage").src = "dress.jpeg"
-                myQuestion.innerHTML = "Taylor finds a cheap sequence dress, yet she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
+                myQuestion.innerHTML = "Nordstroms is fantastic!Taylor finds a cheap sequence dress, yet she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
             }
-            else if(theDress === "Walmart")
+            else if(myChoice === "Walmart")
             {
-                myQuestion.innerHTML = "Taylor finds a glittery dress. Yet, she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
+
+                myQuestion.innerHTML = "Walmart works! Taylor finds a glittery dress. Yet, she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
             }
             else
             {
@@ -49,7 +50,7 @@
         {
             var accesories = document.getElementById("choice3").value;
             var myQuestion = document.getElementById("question");
-            if(accessories === "local boutique")
+            if(accessories === "boutique")
             {
 
                 document.getElementById("mainImage").src = "dress.jpeg"
@@ -118,8 +119,7 @@
         Assist Taylor with which shops and stores to shop at.
         <br>
         Taylor is at a fork in the road. She needs to decide where to buy her shoes. Should she go to Macy's or Target?
-
-    </div>
+      </div>
 
         <br>
         <input type="text" size="50" id="choice" value="Type Macy's or Target here">
