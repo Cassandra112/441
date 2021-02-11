@@ -42,16 +42,29 @@
             if(dress === "Walmart")
             {
 
-                document.getElementById("mainImage").src = "heels0.jpeg"
-                myQuestion.innerHTML = "Walmart is fantastic! Taylor finds a cheap sequence dress, yet she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
+
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
+
+              document.getElementById("choice3").style.display="block";
+              document.getElementById("btnSubmit3").style.display="block";
+
+              myQuestion.innerHTML = "Walmart is fantastic! Taylor finds a cheap sequence dress, yet she still needs to find her accessories. Should she go to the local boutique or RiteAid?";
             }
             else if(dress === "Nordstrom")
             {
-                myQuestion.innerHTML = "Nordstrom works! Taylor finds a glittery dress. Yet, she still needs to find her accessories. Should she go to the local boutique or Riteaid?";
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
+
+              document.getElementById("choice3").style.display="block";
+              document.getElementById("btnSubmit3").style.display="block";
+
+              myQuestion.innerHTML = "Nordstrom works! Taylor finds a glittery dress. Yet, she still needs to find her accessories. Should she go to the local boutique or Riteaid?";
             }
             else
             {
-                myQuestion.innerHTML = "Invalid answer";
+
+              myQuestion.innerHTML = "Invalid answer";
             }
         }
         function getChoice3()
@@ -61,12 +74,23 @@
             var myQuestion = document.getElementById("question");
             if(accessories === "boutique")
             {
-                document.getElementById("mainImage").src = "dress.jpg"
-                myQuestion.innerHTML = "A local boutique will do the job! She is almost ready for the gala. Taylor needs perfume, should she go to Perfume Factory or Neiman Marcus?";
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
+
+              document.getElementById("choice4").style.display="block";
+              document.getElementById("btnSubmit4").style.display="block";
+
+              myQuestion.innerHTML = "A local boutique will do the job! She is almost ready for the gala. Taylor needs perfume, should she go to Perfume Factory or Neiman Marcus?";
             }
             else if(accessories === "RiteAid")
             {
-                myQuestion.innerHTML = "RiteAid is a poor choice, but it will do! Taylor needs perfume, should she go to Perfume Factory or Neiman Marcus?"
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
+
+              document.getElementById("choice4").style.display="block";
+              document.getElementById("btnSubmit4").style.display="block";
+
+              myQuestion.innerHTML = "RiteAid is a poor choice, but it will do! Taylor needs perfume, should she go to Perfume Factory or Neiman Marcus?"
             }
             else
             {
@@ -80,11 +104,20 @@
             var myQuestion = document.getElementById("question");
             if(perfume === "Perfume Factory")
             {
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
 
+              document.getElementById("choice5").style.display="block";
+              document.getElementById("btnSubmit5").style.display="block";
                 myQuestion.innerHTML = "Taylor is almost READY! She needs a plus one. Should she ask her best friend, or ask her crush to go with her ";
             }
             else if(perfume === "Neiman Marcus")
             {
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
+
+
+              document.getElementById("btnSubmit5").style.display="block";
               document.getElementById("btnSubmit5").style.display="block";
 
                 myQuestion.innerHTML = "Neiman Marcus sold her the BEST perfume ever! Now Taylor needs a date! Should she ask her crush to go with her or her best friend?";
@@ -100,13 +133,23 @@
                 var myQuestion = document.getElementById("question");
                 if(date === "best friend")
                 {
+                  document.getElementById("choice").style.display="none";
+                  document.getElementById("btnSubmit").style.display="none";
 
-                    myQuestion.innerHTML = "Taylor is READY! Click here to start over!";
+                  document.getElementById("choice2").style.display="block";
+                  document.getElementById("btnSubmit2").style.display="block";
+
+                  myQuestion.innerHTML = "Taylor is READY! Click here to start over!";
                 }
                 else if(date === "crush")
                 {
+                  document.getElementById("choice").style.display="none";
+                  document.getElementById("btnSubmit").style.display="none";
 
-                    myQuestion.innerHTML = "Taylor is READY! Click here to start over!";
+                  document.getElementById("choice2").style.display="block"; // start over section needs to be completed
+                  document.getElementById("btnSubmit2").style.display="block";
+
+                  myQuestion.innerHTML = "Taylor is READY! Click here to start over!";
 
                 }
                 else
