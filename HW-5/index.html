@@ -1,22 +1,38 @@
+
 <html>
+<head>
+  <link rel="stylesheet" type="text/css" href= "./main.css">
+  <script src="main.js"> </script>
+  </link>
+    <title>
+        Space Memory
+    </title>
 
 
-    <head>
-        <title>Arrays</title>
-        <script>
-            function printArray()
-            {
-                var food = ["apple", "orange", "grape"];
-                var allFoods = "";
-                for(var i = 0; i < food.length; i++)
-                {
-                    allFoods += food[i] + "<br>";
-                }
-                document.getElementById("myFoods").innerHTML = allFoods;
-            }
-        </script>
-    </head>
-    <body onload="printArray();">
-        <div id="myFoods"></div>
-    </body>
+</head>
+
+<body onload="printBlanks();">
+  
+    <h1>Space Game</h1>
+
+    <div class="divTable">
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell"><img src="" id="lighta.jpg" width="200" height="200" onclick="flipImage(0);"></div>
+                <div class="divTableCell"><img src="" id="lightb.jpg" width="200" height="200" onclick="flipImage(1);"></div>
+                <div class="divTableCell"><img src="" id="lightc.jpg" width="200" height="200" onclick="flipImage(2);"></div>
+                <div class="divTableCell"><img src="" id="lightd.jpg" width="200" height="200" onclick="flipImage(3);"></div>
+                <div class="divTableCell"><img src="" id="lighte.jpg" width="200" height="200" onclick="flipImage(4);"></div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell"><img src="" id="lighta2.jpg" width="200" height="200" onclick="flipImage(5);"></div>
+                <div class="divTableCell"><img src="" id="lightb2.jpg" width="200" height="200" onclick="flipImage(6);"></div>
+                <div class="divTableCell"><img src="" id="lightc2.jpg" width="200" height="200" onclick="flipImage(7);"></div>
+                <div class="divTableCell"><img src="" id="lightd2.jpg" width="200" height="200" onclick="flipImage(8);"></div>
+                <div class="divTableCell"><img src="" id="lighte2.jpg" width="200" height="200" onclick="flipImage(9);"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>

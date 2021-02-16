@@ -38,9 +38,10 @@
             if(dress === "Walmart")
             {
 
-
-              //document.getElementById("choice").style.display="none";
-              //document.getElementById("btnSubmit").style.display="none";
+              // now that you are on choice2, you can hide choice 2 and show
+              // choice 3
+              //document.getElementById("choice2").style.display="none";
+              document.getElementById("btnSubmit2").style.display="none";
 
               document.getElementById("choice3").style.display="block";
               document.getElementById("btnSubmit3").style.display="block";
@@ -49,8 +50,9 @@
             }
             else if(dress === "Nordstrom")
             {
-              //document.getElementById("choice").style.display="none";
-              //document.getElementById("btnSubmit").style.display="none";
+              // hide choice 2 and show choice 3
+              //document.getElementById("choice2").style.display="none";
+              document.getElementById("btnSubmit2").style.display="none";
 
               document.getElementById("choice3").style.display="block";
               document.getElementById("btnSubmit3").style.display="block";
@@ -70,8 +72,9 @@
             var myQuestion = document.getElementById("question");
             if(accessories === "boutique")
             {
-              //document.getElementById("choice").style.display="none";
-              //document.getElementById("btnSubmit").style.display="none";
+              // hide choice 3 and show choice 4
+              //document.getElementById("choice3").style.display="none";
+              document.getElementById("btnSubmit3").style.display="none";
 
               document.getElementById("choice4").style.display="block";
               document.getElementById("btnSubmit4").style.display="block";
@@ -80,8 +83,10 @@
             }
             else if(accessories === "RiteAid")
             {
-              //document.getElementById("choice").style.display="none";
-              //document.getElementById("btnSubmit").style.display="none";
+
+              // hide choice 3 and show choice 4
+              //document.getElementById("choice3").style.display="none";
+              document.getElementById("btnSubmit3").style.display="none";
 
               document.getElementById("choice4").style.display="block";
               document.getElementById("btnSubmit4").style.display="block";
@@ -129,17 +134,17 @@
                 if(date === "best friend")
                 {
                   //document.getElementById("choice").style.display="none";
-                  //document.getElementById("btnSubmit").style.display="none";
+                  document.getElementById("btnSubmit6").style.display="none";
 
-                  document.getElementById("choice2").style.display="block";
-                  document.getElementById("btnSubmit2").style.display="block";
+                  document.getElementById("choice6").style.display="block";
+                  document.getElementById("btnSubmit6").style.display="block";
 
                   myQuestion.innerHTML = "Taylor is READY! Click here to start over!";
                 }
                 else if(date === "crush")
                 {
                   //document.getElementById("choice").style.display="none";
-                  //document.getElementById("btnSubmit").style.display="none";
+                  document.getElementById("btnSubmit6").style.display="none";
 
                   document.getElementById("choice6").style.display="block"; // start over section needs to be completed
                   document.getElementById("btnSubmit6").style.display="block";
@@ -190,7 +195,10 @@
         <input type="text" size="50" id="choice4" value="Type Neiman Marcus or perfume factory"  style="display:none">
         <button id="btnSubmit4" onclick="getChoice4();" style="display:none">Press here to move forward</button>
 
-        <input type="text" size="50" id="choice5" value="Taylor is now Ready!" style="display:none">
+        <input type="text" size="50" id="choice5" value="Type crush or best friend" style="display:none">
+        <button id="btnSubmit5" onclick="getChoice5();" style="display:none">Press here to move forward</button>
+
+        <input type="text" size="50" id="choice5" value="Perfect!" style="display:none">
         <button id="btnSubmit5" onclick="getChoice5();" style="display:none">Press here to move forward</button>
 
         <br>

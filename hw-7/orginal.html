@@ -14,7 +14,6 @@
                 document.getElementById("choice2").style.display="block";
                 document.getElementById("btnSubmit2").style.display="block";
 
-
                 myQuestion.innerHTML = "Macys is perfect! Taylor finds the perfect shoes, yet she still needs her dress. Should she go to Nordstrom or Walmart?";
             }
             else if(myChoice === "Target")
@@ -25,15 +24,12 @@
               document.getElementById("choice2").style.display="block";
               document.getElementById("btnSubmit2").style.display="block";
 
-
-
               myQuestion.innerHTML = "Target is a great choice! Taylor finds one pair of golden slippers here that fit. She needs to buy her dress next, should she go to Nordstrom or Walmart";
             }
             else
             {
                 myQuestion.innerHTML = "Invalid answer";
             }
-
         }
         function getChoice2()
         {
@@ -42,9 +38,8 @@
             if(dress === "Walmart")
             {
 
-              // want to hide the previous textbox and button
-              // in this case choice2 and button2
-              document.getElementById("choice2").style.display="none";
+
+              //document.getElementById("choice2").style.display="none";
               document.getElementById("btnSubmit2").style.display="none";
 
               document.getElementById("choice3").style.display="block";
@@ -54,10 +49,8 @@
             }
             else if(dress === "Nordstrom")
             {
-              // want to hide the previous textbox and button
-              // in this case choice2 and button2
-              document.getElementById("choice2").style.display="none";
-              document.getElementById("btnSubmit2").style.display="none";
+              //document.getElementById("choice").style.display="none";
+              //document.getElementById("btnSubmit").style.display="none";
 
               document.getElementById("choice3").style.display="block";
               document.getElementById("btnSubmit3").style.display="block";
@@ -77,10 +70,8 @@
             var myQuestion = document.getElementById("question");
             if(accessories === "boutique")
             {
-               // want to hide the previous textbox and button
-              // in this case choice3 and button3
-              document.getElementById("choice3").style.display="none";
-              document.getElementById("btnSubmit3").style.display="none";
+              //document.getElementById("choice").style.display="none";
+              //document.getElementById("btnSubmit").style.display="none";
 
               document.getElementById("choice4").style.display="block";
               document.getElementById("btnSubmit4").style.display="block";
@@ -89,10 +80,8 @@
             }
             else if(accessories === "RiteAid")
             {
-               // want to hide the previous textbox and button
-              // in this case choice3 and button3
-              document.getElementById("choice").style.display="none";
-              document.getElementById("btnSubmit").style.display="none";
+              //document.getElementById("choice").style.display="none";
+              //document.getElementById("btnSubmit").style.display="none";
 
               document.getElementById("choice4").style.display="block";
               document.getElementById("btnSubmit4").style.display="block";
@@ -111,8 +100,8 @@
             var myQuestion = document.getElementById("question");
             if(perfume === "Perfume Factory")
             {
-              document.getElementById("choice").style.display="none";
-              document.getElementById("btnSubmit").style.display="none";
+              //document.getElementById("choice").style.display="none";
+              //document.getElementById("btnSubmit").style.display="none";
 
               document.getElementById("choice5").style.display="block";
               document.getElementById("btnSubmit5").style.display="block";
@@ -120,9 +109,8 @@
             }
             else if(perfume === "Neiman Marcus")
             {
-              document.getElementById("choice").style.display="none";
-              document.getElementById("btnSubmit").style.display="none";
-
+              //document.getElementById("choice").style.display="none";
+              //document.getElementById("btnSubmit").style.display="none";
 
               document.getElementById("btnSubmit5").style.display="block";
               document.getElementById("btnSubmit5").style.display="block";
@@ -140,8 +128,8 @@
                 var myQuestion = document.getElementById("question");
                 if(date === "best friend")
                 {
-                  document.getElementById("choice").style.display="none";
-                  document.getElementById("btnSubmit").style.display="none";
+                  //document.getElementById("choice").style.display="none";
+                  //document.getElementById("btnSubmit").style.display="none";
 
                   document.getElementById("choice2").style.display="block";
                   document.getElementById("btnSubmit2").style.display="block";
@@ -150,11 +138,11 @@
                 }
                 else if(date === "crush")
                 {
-                  document.getElementById("choice").style.display="none";
-                  document.getElementById("btnSubmit").style.display="none";
+                  //document.getElementById("choice").style.display="none";
+                  //document.getElementById("btnSubmit").style.display="none";
 
-                  document.getElementById("choice2").style.display="block"; // start over section needs to be completed
-                  document.getElementById("btnSubmit2").style.display="block";
+                  document.getElementById("choice6").style.display="block"; // start over section needs to be completed
+                  document.getElementById("btnSubmit6").style.display="block";
 
                   myQuestion.innerHTML = "Taylor is READY! Click here to start over!";
 
@@ -202,8 +190,9 @@
         <input type="text" size="50" id="choice4" value="Type Neiman Marcus or perfume factory"  style="display:none">
         <button id="btnSubmit4" onclick="getChoice4();" style="display:none">Press here to move forward</button>
 
-        <input type="text" size="50" id="choice5" value="Start Over" style="display:none">
+        <input type="text" size="50" id="choice5" value="Taylor is now Ready!" style="display:none">
         <button id="btnSubmit5" onclick="getChoice5();" style="display:none">Press here to move forward</button>
+
         <br>
         <br>
         <img src="heels.jpeg" height="219" width="295"><img src="dress.jpeg" height="219" width="295"><img src="perfume.jpeg" height="219" width="295">
