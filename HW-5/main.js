@@ -1,6 +1,6 @@
-var imageLight = ["lighta", "lightb", "lightc", "lightd", "lighte", "lighta2", "lightb2", "lightc2", "lightd2", "lighte2"];
+var imageLight = ["light1", "light2", "light3", "light4", "light5", "light6", "light7", "light8", "light9", "light10"];
 
-var blankImagePath = "images/blank.jpeg";
+var blankImagePath = "blank.jpg";
 
 var actualImages = new Array();
 
@@ -17,7 +17,7 @@ function printBlanks()
 
 function createRandomImageArray()
 {
-    var actualImagePath = ["images/lighta.jpg", "images/lightb.jpg", "images/lightc.jpg", "images/lightd.jpg", "images/lighte.jpg"];
+    var actualImagePath = ["light1.jpg", "light2.jpg", "light3.jpg", "light4.jpg", "light5.jpg"];
     var count = [0,0,0,0,0,0,0,0,0,0];
     while(actualImages.length < 10)
     {
@@ -29,3 +29,7 @@ function createRandomImageArray()
         }
     }
   }
+  function flipImage(number)
+{
+    document.getElementById(imageLight[number]).src= actualImages[number];
+}

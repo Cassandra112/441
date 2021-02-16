@@ -2,18 +2,20 @@ body{
     background-color:black;
 }
 
-.divTable{
+.outsideborder{
 	display: table;
 	width: 100%;
 }
-.divTableRow {
+.insidelines {
 	display: table-row;
+  column-rule-color: pink;
+  border-color: orange;
 }
 .divTableHeading {
 	background-color: #EEE;
 	display: table-header-group;
 }
-.divTableCell, .divTableHead {
+.borderbox, .divTableHead {
 	border: 1px solid #999999;
 	display: table-cell;
 	padding: 3px 10px;
@@ -28,6 +30,8 @@ body{
 	display: table-footer-group;
 	font-weight: bold;
 }
-.divTableBody {
+.core {
 	display: table-row-group;
+  border: pink;
+  border-color: pink;
 }
