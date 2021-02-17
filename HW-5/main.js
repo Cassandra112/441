@@ -22,7 +22,7 @@ function createRandomImageArray()
     while(actualImages.length < 10)
     {
         var randomNumber = Math.floor(Math.random() * actualImagePath.length)
-        if(count[randomNumber] < 5)
+        if(count[randomNumber] < 2)
         {
             actualImages.push(actualImagePath[randomNumber]);
             count[randomNumber] = count[randomNumber] + 1;
