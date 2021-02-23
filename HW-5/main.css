@@ -33,7 +33,7 @@ body{
 }
 .core {
 	display: table-row-group;
-  border: pink;
+  color: pink;
   border-color: pink;
 }
 
