@@ -1,0 +1,17 @@
+body  {
+background-color: darksalmon;
+background-position: center;
+}
+
+
+.title  {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 12;
+
+}
+
+.title1 {
+
+  position: absolute;
+}
