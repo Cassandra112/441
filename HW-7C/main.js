@@ -64,16 +64,12 @@ function beginStory()
 
 function switchInfo()
 {
-
-
     // this gets a random number from our array
     var randomNumber = Math.floor(Math.random() * imageStory.length);
     // we need to get an object from the array
     var currentStory = imageStory[randomNumber];
 // get the information out of the object
-
     var title = currentStory.theTitle;
-
 
     // display the information
     document.getElementById("title").innerHTML = title;
@@ -81,15 +77,15 @@ function switchInfo()
 function createRandomImageArray()
 {
 
-    var actualImagePath = ["knightsferry.JPG", "pinecrest.jpeg", "modesto.jpeg", "pacificgrove.JPG", "monterey.jpeg"];
+    var imageStory = ["knightsferry.JPG", "pinecrest.jpeg", "modesto.jpeg", "pacificgrove.JPG", "monterey.jpeg"];
     var count = [0,0,0,0,0,0,0,0,0,0];
     while(actualImages.length < 10)
     {
         // get a random number between 0 and the number total number of images that we can choose from
-        var randomNumber = Math.floor(Math.random() * actualImagePath.length)
+        var randomNumber = Math.floor(Math.random() * imageStory.length)
         if(count[randomNumber] < 2)
         {
-            actualImages.push(actualImagePath[randomNumber]);
+            actualImages.push(imageStory[randomNumber]);
             count[randomNumber] = count[randomNumber] +1;
         }
     }
