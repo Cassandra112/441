@@ -1,0 +1,41 @@
+<html>
+    <head>
+          <title>
+         TEN THOUSAND WORDS
+          </title>
+
+
+          <link rel="stylesheet" type="text/css" href="styles/main.css">
+          </link>
+        </head>
+
+          <body onload="beginStory();NicePlace();">
+              <br><br>
+              <h1>Ten Thousand Words</h1>
+
+                    <div class="title">
+                      <!-- we only need one set because we are always switching information-->
+                      <span id="title">Photo Story</span>
+                      <br/>
+                      <img src="knightsferry.JPG" id="knightsferry" width="250" height="200">
+                      <br/>
+                      <span id="description">(new image will appear after button click)</span>
+                      <br />
+                      <button id="btnClick" onclick="switchInfo();">Press this Button</button>
+                    </div>
+
+                    <div class="title1"><img src="pinecrest.jpeg" id="pinecrest1" width="250" height="200" onclick="flipImage(1);"></div>
+                    <div class="title2"><img src="modesto.jpeg" id="modesto" width="250" height="200" onclick="flipImage(2);"></div>
+                    <div class="title3"><img src="pacificgrove.JPG" id="pacificgrove" width="250" height="200" onclick="flipImage(3);"></div>
+                    <div class="title4"><img src="monterey.jpeg" id="monterey" width="250" height="200" onclick="flipImage(4);"></div>
+                  </div>
+
+              <script src="main.js">
+
+              </script>
+
+      </body>
+
+      </html>
+
+     <!-- <button id="btnSubmit5" onclick="getChoice5();" style="display:none">Press here to move forward</button>-->
