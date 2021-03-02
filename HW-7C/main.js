@@ -55,11 +55,12 @@ function beginStory()
 
 
     // now we can add each Story to the imageStory array
-   imageStory.push(Story);
+   imageStory.push(Story); 
    imageStory.push(Story1);
    imageStory.push(Story2);
    imageStory.push(Story3);
    imageStory.push(Story4);
+
 }
 
 function switchInfo()
@@ -74,12 +75,12 @@ function switchInfo()
     // display the information
     document.getElementById("title").innerHTML = title;
 }
-function createRandomImageArray()
-{
+  function createRandomImageArray()
+  {
 
     var imageStory = ["knightsferry.JPG", "pinecrest.jpeg", "modesto.jpeg", "pacificgrove.JPG", "monterey.jpeg"];
-    var count = [0,0,0,0,0,0,0,0,0,0];
-    while(actualImages.length < 10)
+    var count = [0,0,0,0,0,];
+    while(myNicePlace.length < 5)
     {
         // get a random number between 0 and the number total number of images that we can choose from
         var randomNumber = Math.floor(Math.random() * imageStory.length)
